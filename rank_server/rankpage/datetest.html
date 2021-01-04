@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<input type="date" id="cnd">
+<input type="button" onclick="check()">
+
+<script>
+
+function check(){
+var cnd = document.getElementById("cnd").value;
+var temp = new Date(document.getElementById("cnd").value);
+var calnd2 = temp.getFullYear()+"-"+(temp.getMonth()+1)+"-"+(temp.getDate()+1);
+alert(cnd+","+calnd2);
+}
+</script>
+</body>
+</html>
